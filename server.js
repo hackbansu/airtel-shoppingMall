@@ -8,13 +8,13 @@ const app = express();
 
 
 app.get('/', function (req, res) {
-    res.send('working');
-})
+    res.send('working shopping mall');
+});
 
 //req.query = {barcode}
 app.get('/getProductDetails', function (req, res) {
     let barcode = req.query.barcode;
-    if(!barcode || barcode.length>13 || barcode.length<12){
+    if (!barcode || barcode.length > 13 || barcode.length < 12) {
         res.send('invalid barcode!');
         return;
     }
@@ -23,34 +23,67 @@ app.get('/getProductDetails', function (req, res) {
         // console.log(result);
         res.send(result);
     })
-})
+});
+
+//req.query = {name}
+app.get('/searchProducts', function (req, res) {
+    let name = req.query.name;
+    if (!name) {
+        res.send('invalid name!');
+        return;
+    }
+
+    db.productsTable.searchProducts({p_name: name.split(' ')}, ['*'], function (result, fields) {
+        // console.log(result);
+        res.send(result);
+    })
+});
 
 //req.query = {barcode}
 app.get('/addProductToCart', function (req, res) {
     let barcode = req.query.barcode;
-    if(!barcode || barcode.length>13 || barcode.length<12){
+    if (!barcode || barcode.length > 13 || barcode.length < 12) {
         res.send('invalid barcode!');
         return;
     }
 
     db.productsTable.decrementProductsQuantity({barcode: barcode}, function (result, fields) {
         // console.log(result);
-        res.send(result);
+        if (result.changedRows === 1) {
+            db.productsTable.getProductsDetails({barcode: barcode}, ['*'], function (result, fields) {
+                // console.log(result);
+                res.send(result);
+            })
+        }
+        else {
+            res.json("error")
+        }
     })
-})
+});
 
-//req.query = {barcode}
+//req.query = {barcode, quantity}
 app.get('/removeProductFromCart', function (req, res) {
     let barcode = req.query.barcode;
-    if(!barcode || barcode.length>13 || barcode.length<12){
+    let quantity = parseInt(req.query.quantity);
+    if (!barcode || !quantity || barcode.length > 13 || barcode.length < 12) {
         res.send('invalid barcode!');
         return;
     }
 
-    db.productsTable.incrementProductsQuantity({barcode: barcode}, function (result, fields) {
+    db.productsTable.incrementProductsQuantity({barcode: barcode, quantity: quantity}, function (result, fields) {
         // console.log(result);
-        res.send(result);
+        if (result.changedRows === 1) {
+            res.json(true);
+        }
+        else {
+            res.json(false);
+        }
     })
+})
+
+//req.body={}
+app.post('/checkout', function (req, res) {
+    res.send('proceding to payment...');
 })
 
 app.use('/getImage', express.static(path.join(__dirname, '/database/images/')));

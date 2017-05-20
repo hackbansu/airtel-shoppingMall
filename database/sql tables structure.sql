@@ -13,7 +13,6 @@ create table products (
 
 
 insert into products(p_name, barcode, price, vat, available_quantity) values
-	('Google pixel', '0762042122590', 60000, 15, 150),
 	('Microsoft lumia 950', '6438158746008', 30000, 17, 50),
 	('Apple iphone 7 plus 128GB', '190198047946', 70000, 15.5, 250),
 	('Samsung galaxy S8 64GB', '759776452499', 58000, 15, 10),
