@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9a52de8-6e58-4013-99f1-451449dff298" name="Default" comment="first commit">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/barcodes/Google pixel.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/descriptions/0762042122590.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/images/364758944755.png" afterPath="" />
+    <list default="true" id="c9a52de8-6e58-4013-99f1-451449dff298" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/JS/productsTable.js" afterPath="$PROJECT_DIR$/database/JS/productsTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/descriptions/190198047946.md" afterPath="$PROJECT_DIR$/database/descriptions/190198047946.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/descriptions/190576404316.md" afterPath="$PROJECT_DIR$/database/descriptions/190576404316.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/descriptions/6438158746008.md" afterPath="$PROJECT_DIR$/database/descriptions/6438158746008.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/descriptions/723755011106.md" afterPath="$PROJECT_DIR$/database/descriptions/723755011106.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/descriptions/730309275792.md" afterPath="$PROJECT_DIR$/database/descriptions/730309275792.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/descriptions/759776452499.md" afterPath="$PROJECT_DIR$/database/descriptions/759776452499.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/descriptions/888462341530.md" afterPath="$PROJECT_DIR$/database/descriptions/888462341530.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/descriptions/889842015362.md" afterPath="$PROJECT_DIR$/database/descriptions/889842015362.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/sql tables structure.sql" afterPath="$PROJECT_DIR$/database/sql tables structure.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="399">
+              <caret line="88" column="80" lean-forward="false" selection-start-line="88" selection-start-column="80" selection-end-line="88" selection-end-column="80" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
                 <element signature="e#213#255#0" expanded="false" />
@@ -72,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productsTable.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="productsTable.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/JS/productsTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="704">
               <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
@@ -127,8 +113,8 @@
         <option value="$PROJECT_DIR$/database/descriptions/730309275792.md" />
         <option value="$PROJECT_DIR$/database/descriptions/723755011106.md" />
         <option value="$PROJECT_DIR$/database/descriptions/190576404316.md" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/database/JS/productsTable.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -189,24 +175,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="airtel-shoppingMall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="airtel-shoppingMall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -219,6 +187,7 @@
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -320,12 +289,20 @@
       <workItem from="1494489272073" duration="6599000" />
       <workItem from="1494524524672" duration="19194000" />
       <workItem from="1495252398180" duration="3499000" />
-      <workItem from="1495258309201" duration="19420000" />
+      <workItem from="1495258309201" duration="23890000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1495300850143</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1495300850143</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53527000" />
+    <option name="totallyTimeSpent" value="57997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="737" extended-state="6" />
@@ -800,10 +777,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/JS/productsTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        <state relative-caret-position="399">
+          <caret line="88" column="80" lean-forward="false" selection-start-line="88" selection-start-column="80" selection-end-line="88" selection-end-column="80" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
             <element signature="e#213#255#0" expanded="false" />
@@ -827,14 +812,6 @@
             <element signature="e#2345#2389#0" expanded="false" />
             <element signature="e#2596#2655#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/JS/productsTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
